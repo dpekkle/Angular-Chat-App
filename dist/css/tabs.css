@@ -1,0 +1,28 @@
+.tab-bar{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width: 100%;
+	display: inline-flex;
+	flex-direction: row;
+}
+.tab{
+	display: inline;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-width: 0px;
+	padding: 5px;
+	border: 1px #5D6554 solid;
+	cursor:pointer;
+	font-size: 16px;
+	height: 20px;
+
+	flex: 1 2 50px;
+}
+
+.selected-tab{
+	flex: 2 1 100px;
+	color: #262922;
+	background-color: #89937C;
+	transition: flex 1s;
+}

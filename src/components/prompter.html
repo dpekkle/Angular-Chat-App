@@ -1,0 +1,14 @@
+<div id="centerpoint">
+		<div id="prompt">
+				<div id="prompt-contents">
+					<h1 class="prompt-children prompt-title">Please enter a name</h1>
+					<div ng-if="$ctrl.error">
+						<p class="prompt-children prompt-error">{{$ctrl.error}}</p>
+					</div>
+					<form ng-submit="$ctrl.newName()">
+						<input id="prompt-input" class="prompt-children" type="text" ng-model="$ctrl.nameInput" autofocus><br><br>
+						<input class="prompt-children prompt-button" type="submit" value="Enter">
+					</form>
+				</div>
+		</div>
+</div>

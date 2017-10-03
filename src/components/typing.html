@@ -1,0 +1,9 @@
+<span class="test-typing" ng-repeat="user in $ctrl.users">
+	<!-- deliminates by comma, with an 'and' for the second last user typing -->
+	{{user}}{{$last ? '' : ($index==$ctrl.users.length-2) ? ' and ' : ', '}}
+</span>
+<span ng-show="$ctrl.users.length == 1">is </span>
+<span ng-show="$ctrl.users.length > 1">are </span>
+<!-- Can be undefined when new tab created-->
+<span ng-show="$ctrl.users.length > 0">typing...</span>
+<br>

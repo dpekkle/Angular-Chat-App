@@ -1,0 +1,55 @@
+.chatlog-padder{
+	background: #262922;
+	height: 400px;
+	border: 1px #5D6554 solid;
+	padding: 20px;
+}
+
+.active-pane{
+	height: 300px;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+}
+
+.message{
+	font-size: 15px;
+	padding: 10px;
+	padding: 10px 10px 0px 10px;
+	margin-top: 5px;
+	border-top: 1px #5D6554 solid;
+	word-wrap: break-word;
+	width: 100%;
+	display: inline-flex;
+}
+.mini-gravatar{
+	flex: 1;
+	border-radius: 5px;
+	width: 40px;
+}
+
+.message-body{
+	flex: 1;
+    margin-left: 20px;
+	word-wrap: break-all;
+	max-width: 100%;
+}
+
+.user-name{
+	font-size: 17px;
+	color: #5D6554;
+}
+.message-text{
+	word-wrap: break-all;
+	max-width: 100%;
+}
+
+.message-continue{
+	font-size: 15px;	
+		word-wrap: break-word;
+	width: 100%;
+	padding-bottom: 6px;
+    margin-left: 70px;
+
+}
+

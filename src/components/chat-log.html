@@ -1,0 +1,18 @@
+<!-- Chat Window -->
+<div class="chatlog-padder">
+	<h1 class="testing-logname">{{$ctrl.selected}}</h1>
+	<div class='active-pane'>
+			<!-- Repeat all messages that belong to the selected conversation (e.g. the lobby or a private message tab) -->
+			<message data="message" prevname="$ctrl.messagesMap.get($ctrl.selected)[$index-1].name" ng-repeat="message in $ctrl.messagesMap.get($ctrl.selected)"></message>
+			<typing users="$ctrl.typing.get($ctrl.selected)"></typing>
+	</div>
+</div>
+
+<!-- Message Input  -->
+<!-- Message Input and Chat Window are contained in the same component as it makes communication to modify the messages[] attribute for each chat window easier,  planned to refactor but time limit-->
+<div class="input-pane pane ">
+	<form ng-submit="$ctrl.addMessage()">
+		<input class="user-input" type="text" ng-model="$ctrl.input" ng-change="$ctrl.typingEvent()" autofocus></input>
+		<input class="user-submit" value="Send" type="submit"></input>
+	</form>
+</div>

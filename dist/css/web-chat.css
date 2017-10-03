@@ -1,0 +1,19 @@
+body{
+	background: #1B250E;
+	color: #89937C;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.pane{
+	background: #262922;
+	padding: 20px;
+	border: 1px #5D6554 solid;
+}
+
+.chat-window{
+	background: #202817;
+	width: 96%;
+	box-sizing: border-box;
+	margin: 2%;
+	border-radius: 10px;
+}

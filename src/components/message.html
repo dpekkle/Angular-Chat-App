@@ -1,0 +1,16 @@
+<div class="message" ng-if="$ctrl.data.name !== $ctrl.prevname">
+	<div style="display: inline;">
+		<img class="mini-gravatar" ng-src="{{$ctrl.data.gravatar}}">
+	</div>
+	<div class="message-body">
+		<div class="user-name" >
+			<strong>{{$ctrl.data.name}}</strong>
+		</div>
+		<div class="message-text">
+			{{$ctrl.data.text}}
+		</div>
+	</div>
+</div>
+<div class="message-continue" ng-if="$ctrl.data.name == $ctrl.prevname">
+	{{$ctrl.data.text}}
+</div>

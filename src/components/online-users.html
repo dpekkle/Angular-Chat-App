@@ -1,0 +1,7 @@
+<div class="online-pane pane" >
+	<h1>Users online</h1><br>
+	<div id="{{ 'testing-' + user.name}}" class="userCard" ng-repeat="user in $ctrl.onlineUsers" ng-click="$ctrl.addtabs(user.name)">
+		<img class="gravatar" ng-src="{{user.gravatar}}">
+		<div style="font-size: 12px;">{{user.name}}</div>
+	</div>
+</div>

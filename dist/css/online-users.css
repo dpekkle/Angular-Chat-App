@@ -1,0 +1,24 @@
+/* Online-users component */
+
+.online-pane{
+	height: 100%;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.userCard{
+	min-width: 200px;
+	padding: 10px;
+	border: 1px #5D6554 solid;
+	display: inline-block;
+	border-radius: 5px;
+
+}
+.gravatar{
+	border-radius: 5px;
+	width: 100px;
+}
+
+.user-name{
+	min-width: 50px;
+}

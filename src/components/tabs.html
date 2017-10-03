@@ -1,0 +1,6 @@
+<div class="tab-bar ">
+	<div class="tab" ng-class="(tab.lobbyname == $ctrl.selected) ? 'selected-tab' : ''" 
+	ng-click="$ctrl.selectTab(tab.lobbyname)" ng-repeat="tab in $ctrl.tabs">
+		{{tab.lobbyname}}	<a style="float: right;" ng-click="$ctrl.removetab(tab.lobbyname)" ng-if="tab.lobbyname !== 'Lobby'">X</a>
+	</div>
+</div>

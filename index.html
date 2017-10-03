@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"> 
+	<head>
+		<meta charset="utf-8">
+		<title>Web Chat</title>
+		<link rel="stylesheet" type="text/css" href="/dist/css/web-chat.css">
+		<link rel="stylesheet" type="text/css" href="/dist/css/prompter.css">
+		<link rel="stylesheet" type="text/css" href="/dist/css/tabs.css">
+		<link rel="stylesheet" type="text/css" href="/dist/css/message.css">
+		<link rel="stylesheet" type="text/css" href="/dist/css/chat-log.css">
+		<link rel="stylesheet" type="text/css" href="/dist/css/online-users.css">
+	</head>
+	<body >
+		<div ng-app="chatApp" ng-controller="RootController as root">
+			<prompter prompting="root.prompting" ng-if="root.prompting"></prompter>
+			<div class="chat-window pane" ng-if="!root.prompting">
+				<tabs selected="root.selectedTab" tabs="root.tabs" on-tabs-push="root.tabs = $event.tabs"></tabs>
+				<chat-log selected="root.selectedTab"></chat-log>
+				<online-users selected="root.selectedTab" tabs="root.tabs" on-tabs-push="root.tabs = $event.tabs"></online-users>
+			</div>
+		</div>
+		
+		<script src="/node_modules/angular/angular.js"></script>
+		<script src="/node_modules/ifvisible.js/src/ifvisible.min.js"></script>
+		<script src="/node_modules/socket.io-client/dist/socket.io.min.js"></script>
+		<script src="/node_modules/angular-socket-io/socket.js"></script>
+ 		<script src="/dist/client-web-chat.js"></script>
+ 		</body>
+</html>

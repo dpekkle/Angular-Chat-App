@@ -1,0 +1,36 @@
+{
+  "name": "web-chat",
+  "version": "1.0.0",
+  "description": "Web Chat Application for Accelo",
+  "author": "Danielle Cerisier",
+  "license": "ISC",
+  "main": "web-chat.js",
+  "scripts": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "angular": "^1.6.4",
+    "angular-mocks": "^1.6.4",
+    "angular-socket-io": "^0.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "express": "^4.15.2",
+    "grunt": "~0.4.5",
+    "grunt-babel": "^6.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-karma": "^2.0.0",
+    "ifvisible.js": "^1.0.6",
+    "jasmine": "^2.5.3",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.6.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-ng-html2js-preprocessor": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2",
+    "md5": "^2.2.1",
+    "ng-html2js": "^3.0.0",
+    "socket.io": "^1.7.3"
+  }
+}
